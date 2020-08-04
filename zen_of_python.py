@@ -21,4 +21,12 @@ def zen_of_python(file):
                      word_dict[word] = word_dict[word] + 1
                  else:
                      word_dict[word] = 1
+     occurrence_count = Counter(word_dict)
+         top_words = occurrence_count.most_common(5)
+         print('\nTOP 5 WORDS\n'
+               f'{top_words[0][0]}\t:\t{top_words[0][1]}\n'
+               f'{top_words[1][0]}\t:\t{top_words[1][1]}\n'
+               f'{top_words[2][0]}\t:\t{top_words[2][1]}\n'
+               f'{top_words[3][0]}\t:\t{top_words[3][1]}\n'
+               f'{top_words[4][0]}\t:\t{top_words[4][1]}\n')
 
