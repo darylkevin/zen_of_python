@@ -30,3 +30,6 @@ def zen_of_python(file):
                f'{top_words[3][0]}\t:\t{top_words[3][1]}\n'
                f'{top_words[4][0]}\t:\t{top_words[4][1]}\n')
 
+if __name__ == '__main__':
+    zen_of_python('input.in')
+    
